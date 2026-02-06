@@ -4,244 +4,273 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atalaya Studio | Diseño y Desarrollo Digital</title>
-    <link rel="stylesheet" href="./style.css" />
     <meta
       name="description"
-      content="Atalaya Studio ofrece diseño y desarrollo web profesional para marcas y emprendedores."
+      content="Atalaya Studio ofrece diseño y desarrollo web profesional: UI/UX, landing pages, eCommerce y aplicaciones web optimizadas."
     />
     <meta name="author" content="Atalaya Studio" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <header>
-      <h1>Atalaya Studio</h1>
-      <p>Diseño y Desarrollo Digital</p>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-      <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#socios">Nuestros Socios</a></li>
-          <li><a href="#afiliados">Nuestros afiliados</a></li>
-          <li><a href="#trabajo">Trabaja con nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>Atalaya Studio</h1>
+          <p>Diseño y Desarrollo Digital</p>
+        </div>
+
+        <nav aria-label="Navegación principal" class="nav">
+          <ul class="nav-list">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#socios">Socios</a></li>
+            <li><a href="#afiliados">Afiliados</a></li>
+            <li><a href="#trabajo">Trabaja con nosotros</a></li>
+            <li><a class="btn btn-primary" href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container hero" id="contenido">
+        <h2 class="hero-title">Creamos experiencias web modernas, rápidas y accesibles.</h2>
+        <p class="hero-text">
+          UI/UX, desarrollo web, landing pages y eCommerce. Diseñamos para convertir y construimos para escalar.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
+          <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
     </header>
 
-    <main class="container">
-      <section id="servicios">
-        <h2>Nuestro Portafolio de Servicios</h2>
+    <main class="site-main">
+      <section id="servicios" class="section">
+        <div class="container">
+          <h2>Nuestro portafolio de servicios</h2>
+          <p class="section-lead">Soluciones digitales enfocadas en calidad, accesibilidad y rendimiento.</p>
 
-        <article>
-          <h3>Diseño Web UI/UX</h3>
-          <p>
-            Creamos interfaces modernas, intuitivas y centradas en el usuario,
-            mejorando la experiencia de navegación y la conversión de tus
-            clientes.
-          </p>
-        </article>
+          <div class="grid-cards" aria-label="Lista de servicios">
+            <article class="card">
+              <h3>Diseño Web UI/UX</h3>
+              <p>Interfaces modernas e intuitivas, centradas en el usuario y orientadas a conversión.</p>
+            </article>
 
-        <article>
-          <h3>Desarrollo Web</h3>
-          <p>
-            Desarrollamos sitios web rápidos, seguros y escalables utilizando
-            tecnologías modernas como HTML, CSS, JavaScript y frameworks
-            actuales.
-          </p>
-        </article>
+            <article class="card">
+              <h3>Desarrollo Web</h3>
+              <p>Sitios rápidos, seguros y escalables con tecnologías web modernas.</p>
+            </article>
 
-        <article>
-          <h3>Landing Pages</h3>
-          <p>
-            Diseñamos landing pages optimizadas para captar leads, aumentar
-            conversiones y potenciar campañas de marketing digital.
-          </p>
-        </article>
+            <article class="card">
+              <h3>Landing Pages</h3>
+              <p>Landing pages optimizadas para captar leads y potenciar campañas.</p>
+            </article>
 
-        <article>
-          <h3>eCommerce</h3>
-          <p>
-            Creamos tiendas en línea funcionales y seguras, integrando pasarelas
-            de pago, gestión de productos y una experiencia de compra eficiente.
-          </p>
-        </article>
+            <article class="card">
+              <h3>eCommerce</h3>
+              <p>Tiendas en línea seguras con experiencia de compra eficiente.</p>
+            </article>
 
-        <article>
-          <h3>Aplicaciones Web</h3>
-          <p>
-            Desarrollamos aplicaciones web a medida, enfocadas en rendimiento,
-            escalabilidad y soluciones digitales personalizadas para tu negocio.
-          </p>
-        </article>
+            <article class="card">
+              <h3>Aplicaciones Web</h3>
+              <p>Apps web a medida con foco en rendimiento y escalabilidad.</p>
+            </article>
 
-        <article>
-          <h3>Mantenimiento y Soporte</h3>
-          <p>
-            Ofrecemos mantenimiento continuo, actualizaciones y soporte técnico
-            para garantizar el correcto funcionamiento de tus proyectos
-            digitales.
-          </p>
-        </article>
+            <article class="card">
+              <h3>Mantenimiento y Soporte</h3>
+              <p>Soporte continuo, mejoras y actualizaciones para tus proyectos.</p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Acerca de nosotros</h2>
-        <p>
-          Somos una empresa dedicada a ofrecer diseño y desarrollo web
-          profesional. Creamos experiencias digitales enfocadas en UI/UX,
-          facilitando la interacción de los usuarios con sus páginas.
-          Desarrollamos landing pages, eCommerce y aplicaciones web, siguiendo
-          buenas prácticas de la informática y ofreciendo soluciones escalables,
-          robustas y eficientes.
-        </p>
-      </section>
-
-      <section>
-        <h2>Misión y visión</h2>
-
-        <article>
-          <h3>Nuestra misión</h3>
+      <section class="section section-alt" aria-labelledby="acerca">
+        <div class="container">
+          <h2 id="acerca">Acerca de nosotros</h2>
           <p>
-            Brindar soluciones digitales innovadoras mediante el diseño y
-            desarrollo web, creando experiencias funcionales, atractivas y
-            accesibles que impulsen el crecimiento de marcas y emprendedores,
-            aplicando buenas prácticas de UI/UX y tecnologías modernas.
+            Somos un estudio enfocado en diseño y desarrollo web profesional. Creamos experiencias digitales basadas en
+            buenas prácticas UI/UX, accesibilidad y rendimiento.
           </p>
-        </article>
-
-        <article>
-          <h3>Nuestra visión</h3>
-          <p>
-            Ser un estudio digital reconocido por la calidad, creatividad y
-            eficiencia de nuestras soluciones, consolidándonos como un aliado
-            estratégico para empresas que buscan fortalecer su presencia digital
-            y escalar sus proyectos en entornos tecnológicos competitivos.
-          </p>
-        </article>
+        </div>
       </section>
 
-      <section id="socios">
-        <h2>Nuestros Socios</h2>
-        <p>
-          Trabajamos junto a aliados estratégicos que impulsan proyectos
-          digitales.
-        </p>
+      <section class="section" aria-labelledby="mision-vision">
+        <div class="container">
+          <h2 id="mision-vision">Misión y visión</h2>
+
+          <div class="grid-two">
+            <article class="card">
+              <h3>Nuestra misión</h3>
+              <p>
+                Brindar soluciones digitales innovadoras creando experiencias funcionales, atractivas y accesibles que
+                impulsen el crecimiento de marcas y emprendedores.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Nuestra visión</h3>
+              <p>
+                Ser un estudio reconocido por calidad, creatividad y eficiencia, como aliado estratégico para empresas
+                que buscan fortalecer su presencia digital.
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section id="afiliados">
-        <h2>Nuestros Afiliados</h2>
-        <p>Colaboramos con profesionales y empresas del sector tecnológico.</p>
+      <section id="socios" class="section section-alt">
+        <div class="container">
+          <h2>Nuestros Socios</h2>
+          <p>Trabajamos junto a aliados estratégicos que impulsan proyectos digitales.</p>
+        </div>
       </section>
 
-      <section id="trabajo">
-        <h2>Trabaja con Nosotros</h2>
-        <p>Únete a nuestro equipo y crece profesionalmente con Atalaya Studio.</p>
+      <section id="afiliados" class="section">
+        <div class="container">
+          <h2>Nuestros Afiliados</h2>
+          <p>Colaboramos con profesionales y empresas del sector tecnológico.</p>
+        </div>
       </section>
 
-      <section id="contacto">
-        <h2>Información de contacto</h2>
+      <section id="trabajo" class="section section-alt">
+        <div class="container">
+          <h2>Trabaja con nosotros</h2>
+          <p>Únete a nuestro equipo y crece profesionalmente con Atalaya Studio.</p>
+        </div>
+      </section>
 
-        <form action="#" method="post">
-          <label for="nombre">Nombre</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ej: Juan Pérez Díaz"
-            autocomplete="name"
-            required
-          />
+      <section id="contacto" class="section">
+        <div class="container">
+          <h2>Contacto</h2>
+          <p class="section-lead">Cuéntanos sobre tu proyecto. Te responderemos lo antes posible.</p>
 
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Ej: usuario@correo.com"
-            autocomplete="email"
-            required
-          />
+          <form class="form" action="#" method="post" aria-describedby="form-ayuda">
+            <p id="form-ayuda" class="form-help">
+              Los campos marcados son obligatorios. Revisa tu email antes de enviar.
+            </p>
 
-          <label for="servicio">Servicio de interés</label>
-          <select id="servicio" name="servicio" required>
-            <option value="">-- Selecciona un servicio --</option>
-            <option value="ui-ux">UI / UX</option>
-            <option value="landing-page">Landing Page</option>
-            <option value="ecommerce">eCommerce</option>
-            <option value="mantenimiento">Mantenimiento</option>
-          </select>
+            <div class="grid-two">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ej: Juan Pérez Díaz"
+                  autocomplete="name"
+                  required
+                />
+              </div>
 
-          <label for="cell">Celular</label>
-          <input
-            type="tel"
-            id="cell"
-            name="cell"
-            placeholder="Ej: 3125445268"
-            inputmode="numeric"
-            pattern="[0-9]{10}"
-            maxlength="10"
-            autocomplete="tel"
-            required
-          />
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Ej: usuario@correo.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
 
-          <label for="presupuesto">Presupuesto aproximado</label>
-          <select id="presupuesto" name="presupuesto" required>
-            <option value="">-- Selecciona un rango --</option>
-            <option value="menos-500">$500.000 COP o menos</option>
-            <option value="500-1500">$500.000 – $1.500.000 COP</option>
-            <option value="1500-3000">$1.500.000 – $3.000.000 COP</option>
-            <option value="3000-mas">Más de $3.000.000 COP</option>
-          </select>
+              <div class="field">
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio" required>
+                  <option value="">-- Selecciona un servicio --</option>
+                  <option value="ui-ux">UI / UX</option>
+                  <option value="landing-page">Landing Page</option>
+                  <option value="ecommerce">eCommerce</option>
+                  <option value="mantenimiento">Mantenimiento</option>
+                </select>
+              </div>
 
-          <label for="plazo">Plazo</label>
-          <select id="plazo" name="plazo" required>
-            <option value="">-- Selecciona un plazo --</option>
-            <option value="1-2-semanas">1–2 semanas</option>
-            <option value="1-mes">1 mes</option>
-            <option value="flexible">Flexible</option>
-          </select>
+              <div class="field">
+                <label for="cell">Celular</label>
+                <input
+                  type="tel"
+                  id="cell"
+                  name="cell"
+                  placeholder="Ej: 3125445268"
+                  inputmode="numeric"
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                  autocomplete="tel"
+                  aria-describedby="cell-help"
+                  required
+                />
+                <small id="cell-help" class="hint">10 dígitos, solo números.</small>
+              </div>
 
-          <label for="mensaje">Mensaje</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            rows="4"
-            placeholder="Cuéntanos qué necesitas..."
-            required
-          ></textarea>
+              <div class="field">
+                <label for="presupuesto">Presupuesto aproximado</label>
+                <select id="presupuesto" name="presupuesto" required>
+                  <option value="">-- Selecciona un rango --</option>
+                  <option value="menos-500">$500.000 COP o menos</option>
+                  <option value="500-1500">$500.000 – $1.500.000 COP</option>
+                  <option value="1500-3000">$1.500.000 – $3.000.000 COP</option>
+                  <option value="3000-mas">Más de $3.000.000 COP</option>
+                </select>
+              </div>
 
-          <label for="aceptacion">
-            <input type="checkbox" id="aceptacion" name="aceptacion" required />
-            Acepto ser contactado
-          </label>
+              <div class="field">
+                <label for="plazo">Plazo</label>
+                <select id="plazo" name="plazo" required>
+                  <option value="">-- Selecciona un plazo --</option>
+                  <option value="1-2-semanas">1–2 semanas</option>
+                  <option value="1-mes">1 mes</option>
+                  <option value="flexible">Flexible</option>
+                </select>
+              </div>
+            </div>
 
-          <button type="submit">Enviar</button>
-        </form>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Cuéntanos qué necesitas..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="field checkbox">
+              <input type="checkbox" id="aceptacion" name="aceptacion" required />
+              <label for="aceptacion">Acepto ser contactado</label>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer role="contentinfo">
-      <section>
-        <h2>Atalaya Studio</h2>
-        <p>Diseño y Desarrollo Digital</p>
-        <p>© 2026 Atalaya Studio. Todos los derechos reservados.</p>
-      </section>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <section>
+          <h2>Atalaya Studio</h2>
+          <p>Diseño y Desarrollo Digital</p>
+          <p>© 2026 Atalaya Studio. Todos los derechos reservados.</p>
+        </section>
 
-      <section>
-        <h2>Contacto</h2>
-        <p>Email: contacto@atalayastudio.com</p>
-        <p>Colombia</p>
-      </section>
+        <section>
+          <h2>Contacto</h2>
+          <p>Email: contacto@atalayastudio.com</p>
+          <p>Colombia</p>
+        </section>
 
-      <nav aria-label="Enlaces del pie de página">
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#trabajo">Trabaja con nosotros</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-        </ul>
-      </nav>
+        <nav aria-label="Enlaces del pie de página">
+          <ul class="footer-links">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#trabajo">Trabaja con nosotros</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
