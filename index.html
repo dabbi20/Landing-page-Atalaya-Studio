@@ -130,54 +130,110 @@
 
         <section>
             <h3>INFORMACION DE CONTACTO</h3>
-            <form action="">
-                <label for="nombre">NOMBRE</label>
-                <input type="text" placeholder="Ej: Juan Perez Diaz" name="nombre" id="nombre" required
-                    autocomplete="additional-name" />
-                <label for="email">EMAIL</label>
-                <input type="email" placeholder="Ej: user@user.com" name="email" id="email">
-                <label for="servicio">SERVICIO DE INTERES</label>
-                <select name="servicio" id="servicio" required>
-                    <option value="">-- Selecciona un servicio--</option>
-                    <option value="ui-ux">UI / UX</option>
-                    <option value="landin page">Landing Page</option>
-                    <option value="ecommerce">eCommerce</option>
-                    <option value="mantenimiento">Mantenimiento</option>
-                </select>
-                <label for="cell">Celular</label>
-                <input type="tel" placeholder="eje:3125445268" name="cell" pattern="[0-9]{10}" maxlength="10" id="cell"
-                    required>
-                <label for="presupuesto">PRESUPUESTO APROXIMADO</label>
-                <select name="presupuesto" id="presupuesto" required>
-                    <option value="">--Seleccion un rango--</option>
-                    option value="menos-500">$500.000 COP o menos</option>
-                    <option value="500-1500">$500.000 – $1.500.000 COP</option>
-                    <option value="1500-3000">$1.500.000 – $3.000.000 COP</option>
-                    <option value="3000-mas">Más de $3.000.000 COP</option>
-                </select>
-                <label for="plazo">Plazo</label>
+          <form action="#" method="post">
+  <label for="nombre">Nombre</label>
+  <input
+    type="text"
+    id="nombre"
+    name="nombre"
+    placeholder="Ej: Juan Pérez Díaz"
+    autocomplete="name"
+    required
+  />
 
-<select id="plazo" name="plazo" required>
-  <option value="">-- Selecciona un plazo --</option>
-  <option value="1-2-semanas">1–2 semanas</option>
-  <option value="1-mes">1 mes</option>
-  <option value="flexible">Flexible</option>
-</select>
+  <label for="email">Email</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Ej: usuario@correo.com"
+    autocomplete="email"
+    required
+  />
 
-<label>
-    <input type="checkbox" name="aceptacion" required>
+  <label for="servicio">Servicio de interés</label>
+  <select id="servicio" name="servicio" required>
+    <option value="">-- Selecciona un servicio --</option>
+    <option value="ui-ux">UI / UX</option>
+    <option value="landing-page">Landing Page</option>
+    <option value="ecommerce">eCommerce</option>
+    <option value="mantenimiento">Mantenimiento</option>
+  </select>
+
+  <label for="cell">Celular</label>
+  <input
+    type="tel"
+    id="cell"
+    name="cell"
+    placeholder="Ej: 3125445268"
+    pattern="[0-9]{10}"
+    maxlength="10"
+    autocomplete="tel"
+    required
+  />
+
+  <label for="presupuesto">Presupuesto aproximado</label>
+  <select id="presupuesto" name="presupuesto" required>
+    <option value="">-- Selecciona un rango --</option>
+    <option value="menos-500">$500.000 COP o menos</option>
+    <option value="500-1500">$500.000 – $1.500.000 COP</option>
+    <option value="1500-3000">$1.500.000 – $3.000.000 COP</option>
+    <option value="3000-mas">Más de $3.000.000 COP</option>
+  </select>
+
+  <label for="plazo">Plazo</label>
+  <select id="plazo" name="plazo" required>
+    <option value="">-- Selecciona un plazo --</option>
+    <option value="1-2-semanas">1–2 semanas</option>
+    <option value="1-mes">1 mes</option>
+    <option value="flexible">Flexible</option>
+  </select>
+
+  <label for="mensaje">Mensaje</label>
+  <textarea
+    id="mensaje"
+    name="mensaje"
+    rows="4"
+    placeholder="Cuéntanos qué necesitas..."
+    required
+  ></textarea>
+
+  <label for="aceptacion">
+    <input type="checkbox" id="aceptacion" name="aceptacion" required />
     Acepto ser contactado
-</label>
+  </label>
 
-<button type="submit">Enviar</button>
+  <button type="submit">Enviar</button>
+</form>
 
-            </form>
         </section>
     </main>
 
-    <footer>
+  
+<footer role="contentinfo">
+  <section>
+    <h4>Atalaya Studio</h4>
+    <p>Diseño y Desarrollo Digital</p>
+    <p>© 2026 Atalaya Studio. Todos los derechos reservados.</p>
+  </section>
 
-    </footer>
+  <section>
+    <h4>Contacto</h4>
+    <p>Email: contacto@atalayastudio.com</p>
+    <p>Colombia</p>
+  </section>
+
+  <nav aria-label="Enlaces del pie de página">
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#trabajo">Trabaja con nosotros</a></li>
+      <li><a href="#">Política de privacidad</a></li>
+    </ul>
+  </nav>
+</footer>
+
+   
 </body>
 
 </html>
