@@ -258,6 +258,13 @@ textarea:focus {
   font-size: 0.85rem;
 }
 
+.checkbox input[type="checkbox"]{
+   width: 18px;
+   height: 18px;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
 .checkbox {
   display: flex;
   align-items: center;
@@ -265,6 +272,8 @@ textarea:focus {
 }
 
 .checkbox label {
+    margin: 0;
+    line-height: 1.2;
   cursor: pointer;
 }
 
