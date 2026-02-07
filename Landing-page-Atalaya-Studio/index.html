@@ -34,7 +34,7 @@
         </nav>
       </div>
 
-      <div class="container hero" id="contenido">
+      <div class="container hero">
         <h2 class="hero-title">Creamos experiencias web modernas, rápidas y accesibles.</h2>
         <p class="hero-text">
           UI/UX, desarrollo web, landing pages y eCommerce. Diseñamos para convertir y construimos para escalar.
@@ -46,7 +46,7 @@
       </div>
     </header>
 
-    <main class="site-main">
+    <main id="contenido" class="site-main">
       <section id="servicios" class="section">
         <div class="container">
           <h2>Nuestro portafolio de servicios</h2>
@@ -141,12 +141,25 @@
         </div>
       </section>
 
+      <!-- ✅ TESTIMONIOS (sección independiente) -->
+      <section id="testimonios" class="section section-alt" aria-labelledby="titulo-testimonios">
+        <div class="container">
+          <h2 id="titulo-testimonios">Testimonios</h2>
+          <p class="section-lead">Lo que dicen nuestros clientes.</p>
+
+          <p id="testimonials-status" role="status" aria-live="polite"></p>
+
+          <div id="testimonials-list" class="grid-cards" aria-label="Lista de testimonios"></div>
+        </div>
+      </section>
+
+      <!-- ✅ CONTACTO -->
       <section id="contacto" class="section">
         <div class="container">
           <h2>Contacto</h2>
           <p class="section-lead">Cuéntanos sobre tu proyecto. Te responderemos lo antes posible.</p>
 
-          <form class="form" action="#" method="post" aria-describedby="form-ayuda">
+          <form id="contact-form" class="form" action="#" method="post" aria-describedby="form-ayuda">
             <p id="form-ayuda" class="form-help">
               Los campos marcados son obligatorios. Revisa tu email antes de enviar.
             </p>
@@ -242,18 +255,9 @@
               <label for="aceptacion">Acepto ser contactado</label>
             </div>
 
-            
-
             <button class="btn btn-primary" type="submit">Enviar</button>
-        
-<p id="form-status" role="status" aria-live="polite" hidden>
-  Gracias, tu solicitud fue registrada.
-</p>
 
-
-
- 
-
+            <p id="form-status" role="status" aria-live="polite" hidden></p>
           </form>
         </div>
       </section>
@@ -283,6 +287,7 @@
         </nav>
       </div>
     </footer>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>

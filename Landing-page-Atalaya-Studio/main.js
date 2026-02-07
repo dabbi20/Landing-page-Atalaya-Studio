@@ -1,40 +1,76 @@
-//1. Helpers (pequeñas funciones para reutilizar)
-document.addEventListener("DOMContentLoaded",() =>{
-    const form = document.querySelector("form")
-    const status = document.getElementById("form-status")
+// 1) Formulario
+function initForm() {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault()
+  if (!form || !status) return;
 
-        //Mostramos mensaje accesible
-        status.hidden = false
-        status.textContent = "Gracias, tu solicitud fue registrada"
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-        //Limpiar formulario
-        form.reset()
-    })
-})
+    status.hidden = false;
+    status.textContent = "✅ Gracias, tu solicitud fue registrada.";
 
-//2. Formulario
-function initForm(){
-
+    form.reset();
+  });
 }
 
-//3. Menu mobile
-
-function initMenu(){
-
+// 2) Menu mobile (pendiente)
+function initMenu() {
+  // luego lo conectamos
 }
 
-//4. Testimonios API
-
+// 3) Testimonios (JSON simulando API)
 async function loadTestimonials() {
-    
+  const list = document.getElementById("testimonials-list");
+  const status = document.getElementById("testimonials-status");
+
+  if (!list || !status) return;
+
+  status.textContent = "Cargando testimonios…";
+
+  try {
+    const res = await fetch("./testimonials.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const data = await res.json();
+    if (!Array.isArray(data)) throw new Error("Formato inválido");
+
+    list.innerHTML = "";
+
+    if (data.length === 0) {
+      status.textContent = "Aún no hay testimonios.";
+      return;
+    }
+
+    for (const t of data) {
+      const card = document.createElement("article");
+      card.className = "card";
+
+      const name = document.createElement("h3");
+      name.textContent = t?.name ?? "Cliente";
+
+      const role = document.createElement("p");
+      role.className = "hint";
+      role.textContent = t?.role ?? "";
+
+      const msg = document.createElement("p");
+      msg.textContent = t?.message ?? "";
+
+      card.append(name, role, msg);
+      list.appendChild(card);
+    }
+
+    status.textContent = `Testimonios cargados: ${data.length}.`;
+  } catch (err) {
+    status.textContent = "No se pudieron cargar los testimonios. Intenta más tarde.";
+    console.error(err);
+  }
 }
 
-//5. Inicializacion
+// 4) Inicialización
 document.addEventListener("DOMContentLoaded", () => {
-    initForm()
-    initMenu()
-    loadTestimonials()
-})
+  initForm();
+  initMenu();
+  loadTestimonials();
+});
