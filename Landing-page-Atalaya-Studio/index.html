@@ -146,7 +146,7 @@
           <h2>Contacto</h2>
           <p class="section-lead">Cuéntanos sobre tu proyecto. Te responderemos lo antes posible.</p>
 
-          <form class="form" action="#" onsubmit="return false" aria-describedby="form-ayuda">
+          <form class="form" action="#" method="post" aria-describedby="form-ayuda">
             <p id="form-ayuda" class="form-help">
               Los campos marcados son obligatorios. Revisa tu email antes de enviar.
             </p>
@@ -245,6 +245,10 @@
             
 
             <button class="btn btn-primary" type="submit">Enviar</button>
+            <p id="mensaje-exito" hidden>
+  ✅ Gracias, tu solicitud fue registrada.
+</p>
+
  
 
           </form>
@@ -276,5 +280,6 @@
         </nav>
       </div>
     </footer>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
