@@ -1,4 +1,5 @@
-const API_BASE_URL = "http://localhost:3000/api"; // <- IMPORTANTE: /api
+const API_BASE_URL = "https://server-atalaya.onrender.com/api";
+ // <- IMPORTANTE: /api
 
 function setStatus(el, message, type = "info") {
   el.hidden = false;
