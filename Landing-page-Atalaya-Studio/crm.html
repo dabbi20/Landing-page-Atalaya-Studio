@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atalaya Studio | Diseño y Desarrollo Digital</title>
+    <meta
+      name="description"
+      content="Atalaya Studio ofrece diseño y desarrollo web profesional: UI/UX, landing pages, eCommerce y aplicaciones web optimizadas."
+    />
+    <meta name="author" content="Atalaya Studio" />
+    <link rel="shortcut icon" href="../assest/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <h1>Atalaya Studio</h1>
+          <p>Diseño y Desarrollo Digital</p>
+        </div>
+
+        <nav aria-label="Navegación principal" class="nav">
+          <ul class="nav-list">
+            <li><a href="./index.html">Servicios</a></li>
+            <li><a href="./index.html">Socios</a></li>
+            <li><a href="./index.html">Afiliados</a></li>
+            <li><a href="./index.html">Trabaja con nosotros</a></li>
+            <li><a class="btn btn-primary" href="#contacto">Contacto</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container hero">
+        <h2 class="hero-title">Creamos experiencias web modernas, rápidas y accesibles.</h2>
+        <p class="hero-text">
+          UI/UX, desarrollo web, landing pages y eCommerce. Diseñamos para convertir y construimos para escalar.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
+          <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+    </header>
+<main id="contenido" class="site-main">
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <h2>Panel de solicitudes</h2>
+        <p class="section-lead">
+          Aquí ves las solicitudes enviadas. Si alguna quedó guardada localmente por falta de conexión, también aparecerá.
+        </p>
+      </header>
+
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <label class="field">
+            <span class="hint">Buscar</span>
+            <input id="search" type="search" placeholder="Nombre, email o servicio…" autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="toolbar-right">
+          <button class="btn btn-secondary" id="refresh" type="button">Actualizar</button>
+          <button class="btn btn-primary" id="sync" type="button">Sincronizar pendientes</button>
+        </div>
+      </div>
+
+      <p id="crm-status" class="hint" role="status" aria-live="polite"></p>
+
+      <div class="table-wrap" role="region" aria-label="Tabla de solicitudes" tabindex="0">
+        <table class="table" aria-describedby="crm-status">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Email</th>
+              <th scope="col">Celular</th>
+              <th scope="col">Servicio</th>
+              <th scope="col">Plazo</th>
+              <th scope="col">Mensaje</th>
+              <th scope="col">Origen</th>
+              <th scope="col">Fecha</th>
+            </tr>
+          </thead>
+          <tbody id="crm-body">
+            <!-- JS llena esto -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="./crm.js"></script>
+
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <section>
+          <h2>Atalaya Studio</h2>
+          <p>Diseño y Desarrollo Digital</p>
+          <p>© 2026 Atalaya Studio. Todos los derechos reservados.</p>
+        </section>
+
+        <section>
+          <h2>Contacto</h2>
+          <p>Email: contacto@atalayastudio.com</p>
+          <p>Colombia</p>
+        </section>
+
+        <nav aria-label="Enlaces del pie de página">
+          <ul class="footer-links">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#trabajo">Trabaja con nosotros</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

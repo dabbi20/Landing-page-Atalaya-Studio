@@ -32,6 +32,20 @@ Este proyecto fue creado como ejercicio práctico de **HTML5 semántico**, **CSS
 - **Herramientas**
   - Google Lighthouse
 
+  - Landing page responsive
+- Formulario de contacto conectado al backend
+- CRM (Panel de solicitudes)
+- UI/UX profesional con microinteracciones
+- Diseño accesible y escalable
+
+Este frontend consume una API REST desarrollada en Node.js + PostgreSQL.
+
+- CSS (Design Tokens + UI profesional)
+- JavaScript (ES Modules)
+- Fetch API
+- Live Server (desarrollo)
+
+
 ---
 
 ##  Enfoque Mobile-First

@@ -3,7 +3,27 @@
 Landing page profesional para **Atalaya Studio**, enfocada en diseño y desarrollo web.
 Este proyecto fue creado como ejercicio práctico de **HTML5 semántico**, **CSS Mobile-First**, **Grid/Flexbox** y **accesibilidad básica**, como parte de una especialización en desarrollo de software.
 
+
 ---
+
+- Landing page responsive
+- Formulario de contacto conectado al backend
+- CRM (Panel de solicitudes)
+- UI/UX profesional con microinteracciones
+- Diseño accesible y escalable
+
+Este frontend consume una API REST desarrollada en Node.js + PostgreSQL.
+
+---
+
+##  Tecnologías Utilizadas
+
+- HTML5 semántico
+- CSS (Design Tokens + UI profesional)
+- JavaScript (ES Modules)
+- Fetch API
+- Live Server (desarrollo)
+
 
 ##  Objetivo del proyecto
 
@@ -31,6 +51,7 @@ Este proyecto fue creado como ejercicio práctico de **HTML5 semántico**, **CSS
   - Focus visible
 - **Herramientas**
   - Google Lighthouse
+
 
 ---
 
